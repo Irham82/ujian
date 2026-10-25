@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.next/
+out/
+build/
+coverage/
+.env
+.env.local
+.env.*.local
+*.log
+.pglite-data/
+.pglite-test*/
+backups/*.sql.enc
+backups/*.json
+.DS_Store
+Thumbs.db

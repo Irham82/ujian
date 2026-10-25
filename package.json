@@ -1,0 +1,20 @@
+{
+  "name": "cbt-pro-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CBT PRO — Secure Computer-Based Test Platform (500+ Concurrent Students, BYOD, Limited Offline)",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "typecheck": "npm --prefix backend run typecheck && npm --prefix frontend run typecheck",
+    "lint": "npm --prefix backend run lint && npm --prefix frontend run lint",
+    "db:migrate": "npm --prefix backend run db:migrate",
+    "db:seed": "npm --prefix backend run db:seed",
+    "db:backup": "npm --prefix backend run db:backup",
+    "db:restore": "npm --prefix backend run db:restore",
+    "test": "npm --prefix backend run test",
+    "test:load": "npm --prefix backend run test:load"
+  }
+}

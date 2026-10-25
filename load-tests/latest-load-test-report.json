@@ -1,0 +1,167 @@
+{
+  "executedAtUtc": "2026-10-25T03:42:05.696Z",
+  "environment": {
+    "os": "win32",
+    "nodeVersion": "v24.15.0",
+    "databaseDriver": "pglite",
+    "concurrentActiveSessionsTested": 500,
+    "stressSessionsTested": 750,
+    "cameraActiveDuringTest": false,
+    "cameraCapacityNote": "Kapasitas 500-750 sesi ini diukur dengan fitur kamera nonaktif (default). Jika kamera diaktifkan, bandwidth & penyimpanan objek wajib diuji secara terpisah."
+  },
+  "overallMetrics": {
+    "totalRequests": 4255,
+    "failedRequests": 0,
+    "errorRatePercent": 0,
+    "totalDurationSeconds": 21.52,
+    "throughputReqPerSec": 197.72,
+    "paperReadStats": {
+      "count": 500,
+      "avgMs": 74.88,
+      "p50Ms": 71.72,
+      "p95Ms": 88.37,
+      "p99Ms": 116.12,
+      "maxMs": 117.44
+    },
+    "answerSaveStats": {
+      "count": 500,
+      "avgMs": 82.78,
+      "p50Ms": 79.08,
+      "p95Ms": 123.2,
+      "p99Ms": 130.28,
+      "maxMs": 132.41
+    },
+    "offlineSyncStats": {
+      "count": 500,
+      "avgMs": 123.85,
+      "p50Ms": 122.9,
+      "p95Ms": 143.34,
+      "p99Ms": 144.88,
+      "maxMs": 145.58
+    },
+    "submitStats": {
+      "count": 500,
+      "avgMs": 135.4,
+      "p50Ms": 136.22,
+      "p95Ms": 159.57,
+      "p99Ms": 162.43,
+      "maxMs": 162.73
+    },
+    "memoryUsageMb": {
+      "rss": 537.84,
+      "heapUsed": 62.4
+    }
+  },
+  "dataIntegrityVerification": {
+    "confirmedSavedAnswersExpected": 1500,
+    "persistedAnswersInDatabase": 1500,
+    "zeroConfirmedAnswersLost": true,
+    "persistedSubmissionsInDatabase": 500,
+    "duplicateSubmissionsCount": 0
+  },
+  "acceptanceThresholdsMet": {
+    "paperReadP95Under500ms": true,
+    "answerSaveP95Under500ms": true,
+    "errorRateUnder0_1Percent": true,
+    "zeroDataLoss": true,
+    "zeroDuplicateSubmissions": true
+  },
+  "scenarios": {
+    "01_smoke_5_users": {
+      "count": 5,
+      "avgMs": 69.94,
+      "p50Ms": 64.19,
+      "p95Ms": 93.88,
+      "p99Ms": 93.88,
+      "maxMs": 93.88
+    },
+    "02_ramp_50_users": {
+      "count": 50,
+      "avgMs": 237.84,
+      "p50Ms": 237.77,
+      "p95Ms": 238.51,
+      "p99Ms": 238.6,
+      "maxMs": 238.6
+    },
+    "03_test_100_users": {
+      "count": 100,
+      "avgMs": 191.34,
+      "p50Ms": 200.11,
+      "p95Ms": 207.41,
+      "p99Ms": 209.48,
+      "maxMs": 210.02
+    },
+    "04_test_250_users": {
+      "count": 250,
+      "avgMs": 201.33,
+      "p50Ms": 205.27,
+      "p95Ms": 240.31,
+      "p99Ms": 240.57,
+      "maxMs": 240.62
+    },
+    "05_test_500_concurrent_sessions": {
+      "count": 500,
+      "avgMs": 176.25,
+      "p50Ms": 172.88,
+      "p95Ms": 215.36,
+      "p99Ms": 215.71,
+      "maxMs": 215.74
+    },
+    "06_stress_750_sessions": {
+      "count": 750,
+      "avgMs": 162.3,
+      "p50Ms": 145.83,
+      "p95Ms": 216.44,
+      "p99Ms": 216.81,
+      "maxMs": 219.66
+    },
+    "07_login_spike_100": {
+      "count": 100,
+      "avgMs": 345.75,
+      "p50Ms": 346.42,
+      "p95Ms": 479.8,
+      "p99Ms": 494.47,
+      "maxMs": 503.37
+    },
+    "08_paper_navigation_500_sessions": {
+      "count": 500,
+      "avgMs": 74.88,
+      "p50Ms": 71.72,
+      "p95Ms": 88.37,
+      "p99Ms": 116.12,
+      "maxMs": 117.44
+    },
+    "09_autosave_500_sessions": {
+      "count": 500,
+      "avgMs": 82.78,
+      "p50Ms": 79.08,
+      "p95Ms": 123.2,
+      "p99Ms": 130.28,
+      "maxMs": 132.41
+    },
+    "11_12_13_disconnect_reconnect_offline_sync_500": {
+      "count": 500,
+      "avgMs": 123.85,
+      "p50Ms": 122.9,
+      "p95Ms": 143.34,
+      "p99Ms": 144.88,
+      "maxMs": 145.58
+    },
+    "14_anti_cheat_event_burst_500": {
+      "count": 500,
+      "avgMs": 55.51,
+      "p50Ms": 54.72,
+      "p95Ms": 66.23,
+      "p99Ms": 83.09,
+      "maxMs": 85.96
+    },
+    "10_simultaneous_submit_500_sessions": {
+      "count": 500,
+      "avgMs": 135.4,
+      "p50Ms": 136.22,
+      "p95Ms": 159.57,
+      "p99Ms": 162.43,
+      "maxMs": 162.73
+    }
+  }
+}
